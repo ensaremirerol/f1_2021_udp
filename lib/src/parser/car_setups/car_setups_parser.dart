@@ -35,13 +35,9 @@ import 'package:f1_2021_udp/src/types/packet_header.dart';
 class CarSetupsParser extends Parser<PacketCarSetupData> {
   @override
   PacketCarSetupData parse(Uint8List data, [PacketHeader? header]) {
-    if (header == null) {
-      packetHeaderRequired();
-    }
-    offset = Parser.HEADER_OFFSET;
     final ByteData bd = ByteData.view(data.buffer);
     final PacketCarSetupData packet = PacketCarSetupData(
-        m_header: header,
+        m_header: header!,
         m_carSetupData: List.generate(
             22,
             (index) => CarSetupData(

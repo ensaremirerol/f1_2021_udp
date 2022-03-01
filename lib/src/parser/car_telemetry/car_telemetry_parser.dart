@@ -44,13 +44,9 @@ struct PacketCarTelemetryData
 class CarTelemetryParser extends Parser<PacketCarTelemetryData> {
   @override
   PacketCarTelemetryData parse(Uint8List data, [PacketHeader? header]) {
-    if (header == null) {
-      packetHeaderRequired();
-    }
-    offset = Parser.HEADER_OFFSET;
     final ByteData bd = ByteData.view(data.buffer);
     PacketCarTelemetryData packet = PacketCarTelemetryData(
-      m_header: header,
+      m_header: header!,
       m_carTelemetryData: List<CarTelemetryData>.generate(
         22,
         (i) => CarTelemetryData(

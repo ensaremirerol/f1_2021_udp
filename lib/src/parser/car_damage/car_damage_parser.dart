@@ -30,13 +30,9 @@ struct CarDamageData
 class CarDamageDataParser extends Parser<PacketCarDamageData> {
   @override
   PacketCarDamageData parse(Uint8List data, [PacketHeader? header]) {
-    if (header == null) {
-      packetHeaderRequired();
-    }
-    offset = Parser.HEADER_OFFSET;
     final ByteData bd = ByteData.view(data.buffer);
     final PacketCarDamageData packet = PacketCarDamageData(
-        m_header: header,
+        m_header: header!,
         m_carDamageData: List.generate(
             22,
             (index) => CarDamageData(
@@ -61,7 +57,6 @@ class CarDamageDataParser extends Parser<PacketCarDamageData> {
                 m_engineICEWear: parseNext(1, bd.getUint8),
                 m_engineMGUKWear: parseNext(1, bd.getUint8),
                 m_engineTCWear: parseNext(1, bd.getUint8))));
-    reset();
     return packet;
   }
 }
