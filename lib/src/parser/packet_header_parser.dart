@@ -26,9 +26,9 @@ struct PacketHeader
 
 class PacketHeaderParser extends Parser<PacketHeader> {
   @override
-  PacketHeader parse(Uint8List data) {
+  PacketHeader parse(Uint8List data, [PacketHeader? header]) {
     ByteData bd = ByteData.sublistView(data);
-    Parser.currentHeader = PacketHeader(
+    PacketHeader m_header = PacketHeader(
         m_packetFormat: parseNext(2, bd.getUint16),
         m_gameMajorVersion: parseNext(1, bd.getUint8),
         m_gameMinorVersion: parseNext(1, bd.getUint8),
@@ -40,6 +40,6 @@ class PacketHeaderParser extends Parser<PacketHeader> {
         m_playerCarIndex: parseNext(1, bd.getUint8),
         m_secondaryPlayerCarIndex: parseNext(1, bd.getUint8));
     reset();
-    return Parser.currentHeader!;
+    return m_header;
   }
 }

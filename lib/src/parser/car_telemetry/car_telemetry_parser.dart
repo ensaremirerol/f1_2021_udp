@@ -2,6 +2,7 @@ import 'dart:typed_data';
 
 import 'package:f1_2021_udp/src/parser/parser.dart';
 import 'package:f1_2021_udp/src/types/car_telemetry/car_telemetry.dart';
+import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 /*
 struct CarTelemetryData
@@ -42,11 +43,14 @@ struct PacketCarTelemetryData
 
 class CarTelemetryParser extends Parser<PacketCarTelemetryData> {
   @override
-  PacketCarTelemetryData parse(Uint8List data) {
-    offset = 24;
+  PacketCarTelemetryData parse(Uint8List data, [PacketHeader? header]) {
+    if (header == null) {
+      packetHeaderRequired();
+    }
+    offset = Parser.HEADER_OFFSET;
     final ByteData bd = ByteData.view(data.buffer);
     PacketCarTelemetryData packet = PacketCarTelemetryData(
-      m_header: Parser.currentHeader!,
+      m_header: header,
       m_carTelemetryData: List<CarTelemetryData>.generate(
         22,
         (i) => CarTelemetryData(
@@ -77,7 +81,6 @@ class CarTelemetryParser extends Parser<PacketCarTelemetryData> {
       m_mfdPanelIndexSecondaryPlayer: parseNext(1, bd.getUint8),
       m_suggestedGear: parseNext(1, bd.getInt8),
     );
-    reset();
     return packet;
   }
 }
