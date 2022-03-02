@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 /*
 struct ParticipantData
 {
@@ -54,12 +56,6 @@ class ParticipantData {
       required this.m_nationality,
       required this.m_name,
       required this.m_yourTelemetry});
-
-  @override
-  String toString() {
-    // TODO: implement toString
-    return super.toString();
-  }
 }
 
 /*

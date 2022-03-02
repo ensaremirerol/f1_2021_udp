@@ -1,5 +1,6 @@
+// ignore_for_file: file_names
+
 import 'dart:async';
-import 'dart:io';
 import 'dart:isolate';
 import 'dart:typed_data';
 
@@ -22,7 +23,7 @@ import 'package:udp/udp.dart';
 import 'package:logger/logger.dart';
 
 class F12021TelemetryListener {
-  static Logger _logger = Logger();
+  static final Logger _logger = Logger();
 
   late ReceivePort _port;
 

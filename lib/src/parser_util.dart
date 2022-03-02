@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'dart:isolate';
 import 'dart:typed_data';
 
@@ -35,7 +37,7 @@ const List<Type> all_parsers = [
 ];
 
 class ParserUtil {
-  static Logger _logger = Logger();
+  static final Logger _logger = Logger();
   /*
 
   Motion	0	Contains all motion data for player’s car – only sent while player is in control

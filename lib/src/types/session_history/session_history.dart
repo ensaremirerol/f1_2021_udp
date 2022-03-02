@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 /*struct LapHistoryData
 {
     uint32    m_lapTimeInMS;           // Lap time in milliseconds
