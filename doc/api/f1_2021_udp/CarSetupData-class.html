@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the CarSetupData class from the f1_2021_udp library, for the Dart programming language.">
+  <title>CarSetupData class - f1_2021_udp library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">f1_2021_udp</a></li>
+    <li><a href="../f1_2021_udp/f1_2021_udp-library.html">f1_2021_udp</a></li>
+    <li class="self-crumb">CarSetupData class</li>
+  </ol>
+  <div class="self-name">CarSetupData</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">CarSetupData</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="CarSetupData" class="callable">
+          <span class="name"><a href="../f1_2021_udp/CarSetupData/CarSetupData.html">CarSetupData</a></span><span class="signature">(<span class="parameter" id="-param-m_frontWing">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_frontWing</span>, </span><span class="parameter" id="-param-m_rearWing"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_rearWing</span>, </span><span class="parameter" id="-param-m_onThrottle"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_onThrottle</span>, </span><span class="parameter" id="-param-m_offThrottle"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_offThrottle</span>, </span><span class="parameter" id="-param-m_frontCamber"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_frontCamber</span>, </span><span class="parameter" id="-param-m_rearCamber"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_rearCamber</span>, </span><span class="parameter" id="-param-m_frontToe"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_frontToe</span>, </span><span class="parameter" id="-param-m_rearToe"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_rearToe</span>, </span><span class="parameter" id="-param-m_frontSuspension"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_frontSuspension</span>, </span><span class="parameter" id="-param-m_rearSuspension"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_rearSuspension</span>, </span><span class="parameter" id="-param-m_frontAntiRollBar"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_frontAntiRollBar</span>, </span><span class="parameter" id="-param-m_rearAntiRollBar"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_rearAntiRollBar</span>, </span><span class="parameter" id="-param-m_frontSuspensionHeight"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_frontSuspensionHeight</span>, </span><span class="parameter" id="-param-m_rearSuspensionHeight"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_rearSuspensionHeight</span>, </span><span class="parameter" id="-param-m_brakePressure"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_brakePressure</span>, </span><span class="parameter" id="-param-m_brakeBias"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_brakeBias</span>, </span><span class="parameter" id="-param-m_rearLeftTyrePressure"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_rearLeftTyrePressure</span>, </span><span class="parameter" id="-param-m_rearRightTyrePressure"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_rearRightTyrePressure</span>, </span><span class="parameter" id="-param-m_frontLeftTyrePressure"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_frontLeftTyrePressure</span>, </span><span class="parameter" id="-param-m_frontRightTyrePressure"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_frontRightTyrePressure</span>, </span><span class="parameter" id="-param-m_ballast"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_ballast</span>, </span><span class="parameter" id="-param-m_fuelLoad"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_fuelLoad</span>}</span>)</span>
+        </dt>
+        <dd>
+           
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="m_ballast" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_ballast.html">m_ballast</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Ballast 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_brakeBias" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_brakeBias.html">m_brakeBias</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Brake bias (percentage) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_brakePressure" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_brakePressure.html">m_brakePressure</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Brake pressure (percentage) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontAntiRollBar" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontAntiRollBar.html">m_frontAntiRollBar</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Front anti-roll bar 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontCamber" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontCamber.html">m_frontCamber</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Front camber angle (suspension geometry) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontLeftTyrePressure" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontLeftTyrePressure.html">m_frontLeftTyrePressure</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Front left tyre pressure (PSI) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontRightTyrePressure" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontRightTyrePressure.html">m_frontRightTyrePressure</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Front right tyre pressure (PSI) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontSuspension" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontSuspension.html">m_frontSuspension</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Front suspension 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontSuspensionHeight" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontSuspensionHeight.html">m_frontSuspensionHeight</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Front ride height 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontToe" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontToe.html">m_frontToe</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Front toe angle (suspension geometry) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontWing" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_frontWing.html">m_frontWing</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Front wing aero 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_fuelLoad" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_fuelLoad.html">m_fuelLoad</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Fuel load 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_offThrottle" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_offThrottle.html">m_offThrottle</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Differential adjustment off throttle (percentage) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_onThrottle" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_onThrottle.html">m_onThrottle</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Differential adjustment on throttle (percentage) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearAntiRollBar" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearAntiRollBar.html">m_rearAntiRollBar</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Rear anti-roll bar 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearCamber" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearCamber.html">m_rearCamber</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Rear camber angle (suspension geometry) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearLeftTyrePressure" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearLeftTyrePressure.html">m_rearLeftTyrePressure</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Rear left tyre pressure (PSI) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearRightTyrePressure" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearRightTyrePressure.html">m_rearRightTyrePressure</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Rear right tyre pressure (PSI) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearSuspension" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearSuspension.html">m_rearSuspension</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Rear suspension 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearSuspensionHeight" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearSuspensionHeight.html">m_rearSuspensionHeight</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Rear ride height 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearToe" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearToe.html">m_rearToe</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Rear toe angle (suspension geometry) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_rearWing" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/m_rearWing.html">m_rearWing</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Rear wing aero 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable">
+  <span class="name"><a href="../f1_2021_udp/CarSetupData/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  A string representation of this object. <a href="../f1_2021_udp/CarSetupData/toString.html">[...]</a>
+  <div class="features">override</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">f1_2021_udp</a></li>
+  <li><a href="../f1_2021_udp/f1_2021_udp-library.html">f1_2021_udp</a></li>
+  <li class="self-crumb">CarSetupData class</li>
+</ol>
+
+
+    <h5>f1_2021_udp library</h5>
+    <ol>
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#classes">Classes</a></li>
+  <li><a href="../f1_2021_udp/Buttons-class.html">Buttons</a></li>
+  <li><a href="../f1_2021_udp/CarDamageData-class.html">CarDamageData</a></li>
+  <li><a href="../f1_2021_udp/CarMotionData-class.html">CarMotionData</a></li>
+  <li><a href="../f1_2021_udp/CarSetupData-class.html">CarSetupData</a></li>
+  <li><a href="../f1_2021_udp/CarStatusData-class.html">CarStatusData</a></li>
+  <li><a href="../f1_2021_udp/CarTelemetryData-class.html">CarTelemetryData</a></li>
+  <li><a href="../f1_2021_udp/DriveThroughPenaltyServed-class.html">DriveThroughPenaltyServed</a></li>
+  <li><a href="../f1_2021_udp/EventDataDetails-class.html">EventDataDetails</a></li>
+  <li><a href="../f1_2021_udp/F12021TelemetryListener-class.html">F12021TelemetryListener</a></li>
+  <li><a href="../f1_2021_udp/FastestLap-class.html">FastestLap</a></li>
+  <li><a href="../f1_2021_udp/FinalClassificationData-class.html">FinalClassificationData</a></li>
+  <li><a href="../f1_2021_udp/Flashback-class.html">Flashback</a></li>
+  <li><a href="../f1_2021_udp/LapData-class.html">LapData</a></li>
+  <li><a href="../f1_2021_udp/LapHistoryData-class.html">LapHistoryData</a></li>
+  <li><a href="../f1_2021_udp/LobbyInfoData-class.html">LobbyInfoData</a></li>
+  <li><a href="../f1_2021_udp/MarshalZone-class.html">MarshalZone</a></li>
+  <li><a href="../f1_2021_udp/PacketCarDamageData-class.html">PacketCarDamageData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarSetupData-class.html">PacketCarSetupData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarStatusData-class.html">PacketCarStatusData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarTelemetryData-class.html">PacketCarTelemetryData</a></li>
+  <li><a href="../f1_2021_udp/PacketEventData-class.html">PacketEventData</a></li>
+  <li><a href="../f1_2021_udp/PacketFinalClassificationData-class.html">PacketFinalClassificationData</a></li>
+  <li><a href="../f1_2021_udp/PacketHeader-class.html">PacketHeader</a></li>
+  <li><a href="../f1_2021_udp/PacketLapData-class.html">PacketLapData</a></li>
+  <li><a href="../f1_2021_udp/PacketLobbyInfoData-class.html">PacketLobbyInfoData</a></li>
+  <li><a href="../f1_2021_udp/PacketMotionData-class.html">PacketMotionData</a></li>
+  <li><a href="../f1_2021_udp/PacketSessionData-class.html">PacketSessionData</a></li>
+  <li><a href="../f1_2021_udp/PacketSessionHistoryData-class.html">PacketSessionHistoryData</a></li>
+  <li><a href="../f1_2021_udp/Penalty-class.html">Penalty</a></li>
+  <li><a href="../f1_2021_udp/RaceWinner-class.html">RaceWinner</a></li>
+  <li><a href="../f1_2021_udp/Retirement-class.html">Retirement</a></li>
+  <li><a href="../f1_2021_udp/SpeedTrap-class.html">SpeedTrap</a></li>
+  <li><a href="../f1_2021_udp/StartLIghts-class.html">StartLIghts</a></li>
+  <li><a href="../f1_2021_udp/StopGoPenaltyServed-class.html">StopGoPenaltyServed</a></li>
+  <li><a href="../f1_2021_udp/TeamMateInPits-class.html">TeamMateInPits</a></li>
+  <li><a href="../f1_2021_udp/TyreStintHistoryData-class.html">TyreStintHistoryData</a></li>
+  <li><a href="../f1_2021_udp/WeatherForecastSample-class.html">WeatherForecastSample</a></li>
+
+
+
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#constants">Constants</a></li>
+  <li><a href="../f1_2021_udp/EVENT_TYPES-constant.html">EVENT_TYPES</a></li>
+
+
+
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#enums">Enums</a></li>
+  <li><a href="../f1_2021_udp/CarWheel.html">CarWheel</a></li>
+  <li><a href="../f1_2021_udp/InfringementTypes.html">InfringementTypes</a></li>
+  <li><a href="../f1_2021_udp/PenaltyTypes.html">PenaltyTypes</a></li>
+  <li><a href="../f1_2021_udp/SurfaceTypes.html">SurfaceTypes</a></li>
+  <li><a href="../f1_2021_udp/Types.html">Types</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../f1_2021_udp/CarSetupData-class.html#constructors">Constructors</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/CarSetupData.html">CarSetupData</a></li>
+
+
+    <li class="section-title">
+      <a href="../f1_2021_udp/CarSetupData-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_ballast.html">m_ballast</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_brakeBias.html">m_brakeBias</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_brakePressure.html">m_brakePressure</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontAntiRollBar.html">m_frontAntiRollBar</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontCamber.html">m_frontCamber</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontLeftTyrePressure.html">m_frontLeftTyrePressure</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontRightTyrePressure.html">m_frontRightTyrePressure</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontSuspension.html">m_frontSuspension</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontSuspensionHeight.html">m_frontSuspensionHeight</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontToe.html">m_frontToe</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_frontWing.html">m_frontWing</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_fuelLoad.html">m_fuelLoad</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_offThrottle.html">m_offThrottle</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_onThrottle.html">m_onThrottle</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearAntiRollBar.html">m_rearAntiRollBar</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearCamber.html">m_rearCamber</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearLeftTyrePressure.html">m_rearLeftTyrePressure</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearRightTyrePressure.html">m_rearRightTyrePressure</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearSuspension.html">m_rearSuspension</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearSuspensionHeight.html">m_rearSuspensionHeight</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearToe.html">m_rearToe</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/m_rearWing.html">m_rearWing</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../f1_2021_udp/CarSetupData-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../f1_2021_udp/CarSetupData/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../f1_2021_udp/CarSetupData-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    f1_2021_udp
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

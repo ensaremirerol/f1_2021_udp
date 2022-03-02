@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the PacketSessionData class from the f1_2021_udp library, for the Dart programming language.">
+  <title>PacketSessionData class - f1_2021_udp library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">f1_2021_udp</a></li>
+    <li><a href="../f1_2021_udp/f1_2021_udp-library.html">f1_2021_udp</a></li>
+    <li class="self-crumb">PacketSessionData class</li>
+  </ol>
+  <div class="self-name">PacketSessionData</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">PacketSessionData</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="PacketSessionData" class="callable">
+          <span class="name"><a href="../f1_2021_udp/PacketSessionData/PacketSessionData.html">PacketSessionData</a></span><span class="signature">(<span class="parameter" id="-param-m_header">{<span>required</span> <span class="type-annotation"><a href="../f1_2021_udp/PacketHeader-class.html">PacketHeader</a></span> <span class="parameter-name">m_header</span>, </span><span class="parameter" id="-param-m_weather"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_weather</span>, </span><span class="parameter" id="-param-m_trackTemperature"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_trackTemperature</span>, </span><span class="parameter" id="-param-m_airTemperature"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_airTemperature</span>, </span><span class="parameter" id="-param-m_totalLaps"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_totalLaps</span>, </span><span class="parameter" id="-param-m_trackLength"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_trackLength</span>, </span><span class="parameter" id="-param-m_sessionType"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_sessionType</span>, </span><span class="parameter" id="-param-m_trackId"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_trackId</span>, </span><span class="parameter" id="-param-m_formula"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_formula</span>, </span><span class="parameter" id="-param-m_sessionTimeLeft"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_sessionTimeLeft</span>, </span><span class="parameter" id="-param-m_sessionDuration"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_sessionDuration</span>, </span><span class="parameter" id="-param-m_pitSpeedLimit"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitSpeedLimit</span>, </span><span class="parameter" id="-param-m_gamePaused"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_gamePaused</span>, </span><span class="parameter" id="-param-m_isSpectating"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_isSpectating</span>, </span><span class="parameter" id="-param-m_spectatorCarIndex"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_spectatorCarIndex</span>, </span><span class="parameter" id="-param-m_sliProNativeSupport"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_sliProNativeSupport</span>, </span><span class="parameter" id="-param-m_numMarshalZones"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_numMarshalZones</span>, </span><span class="parameter" id="-param-m_marshalZones"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../f1_2021_udp/MarshalZone-class.html">MarshalZone</a></span>&gt;</span></span> <span class="parameter-name">m_marshalZones</span>, </span><span class="parameter" id="-param-m_safetyCarStatus"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_safetyCarStatus</span>, </span><span class="parameter" id="-param-m_networkGame"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_networkGame</span>, </span><span class="parameter" id="-param-m_numWeatherForecastSamples"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_numWeatherForecastSamples</span>, </span><span class="parameter" id="-param-m_weatherForecastSamples"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../f1_2021_udp/WeatherForecastSample-class.html">WeatherForecastSample</a></span>&gt;</span></span> <span class="parameter-name">m_weatherForecastSamples</span>, </span><span class="parameter" id="-param-m_forecastAccuracy"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_forecastAccuracy</span>, </span><span class="parameter" id="-param-m_aiDifficulty"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_aiDifficulty</span>, </span><span class="parameter" id="-param-m_seasonLinkIdentifier"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_seasonLinkIdentifier</span>, </span><span class="parameter" id="-param-m_weekendLinkIdentifier"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_weekendLinkIdentifier</span>, </span><span class="parameter" id="-param-m_sessionLinkIdentifier"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_sessionLinkIdentifier</span>, </span><span class="parameter" id="-param-m_pitStopWindowIdealLap"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitStopWindowIdealLap</span>, </span><span class="parameter" id="-param-m_pitStopWindowLatestLap"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitStopWindowLatestLap</span>, </span><span class="parameter" id="-param-m_pitStopRejoinPosition"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitStopRejoinPosition</span>, </span><span class="parameter" id="-param-m_steeringAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_steeringAssist</span>, </span><span class="parameter" id="-param-m_brakingAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_brakingAssist</span>, </span><span class="parameter" id="-param-m_gearboxAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_gearboxAssist</span>, </span><span class="parameter" id="-param-m_pitAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitAssist</span>, </span><span class="parameter" id="-param-m_pitReleaseAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitReleaseAssist</span>, </span><span class="parameter" id="-param-m_ERSAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_ERSAssist</span>, </span><span class="parameter" id="-param-m_DRSAssist"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_DRSAssist</span>, </span><span class="parameter" id="-param-m_dynamicRacingLine"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_dynamicRacingLine</span>, </span><span class="parameter" id="-param-m_dynamicRacingLineType"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_dynamicRacingLineType</span>}</span>)</span>
+        </dt>
+        <dd>
+           
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="m_aiDifficulty" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_aiDifficulty.html">m_aiDifficulty</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  AI Difficulty rating – 0-110 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_airTemperature" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_airTemperature.html">m_airTemperature</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Air temp. in degrees celsius 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_brakingAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_brakingAssist.html">m_brakingAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = low, 2 = medium, 3 = high 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_DRSAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_DRSAssist.html">m_DRSAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_dynamicRacingLine" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_dynamicRacingLine.html">m_dynamicRacingLine</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_dynamicRacingLineType" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_dynamicRacingLineType.html">m_dynamicRacingLineType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = corners only, 2 = full 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_ERSAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_ERSAssist.html">m_ERSAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_forecastAccuracy" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_forecastAccuracy.html">m_forecastAccuracy</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = Perfect, 1 = Approximate 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_formula" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_formula.html">m_formula</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Formula, 0 = F1 Modern, 1 = F1 Classic, 2 = F2,
+3 = F1 Generic 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_gamePaused" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_gamePaused.html">m_gamePaused</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Whether the game is paused 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_gearboxAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_gearboxAssist.html">m_gearboxAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  1 = manual, 2 = manual &amp; suggested gear, 3 = auto 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_header" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_header.html">m_header</a></span>
+  <span class="signature">&#8594; <a href="../f1_2021_udp/PacketHeader-class.html">PacketHeader</a></span> 
+
+</dt>
+<dd>
+   
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_isSpectating" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_isSpectating.html">m_isSpectating</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Whether the player is spectating 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_marshalZones" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_marshalZones.html">m_marshalZones</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../f1_2021_udp/MarshalZone-class.html">MarshalZone</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  List of marshal zones – max 21 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_networkGame" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_networkGame.html">m_networkGame</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = offline, 1 = online 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_numMarshalZones" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_numMarshalZones.html">m_numMarshalZones</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Number of marshal zones to follow 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="m_numWeatherForecastSamples" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_numWeatherForecastSamples.html">m_numWeatherForecastSamples</a></span>
+  <span class="signature">&#8596; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Number of weather samples to follow 
+  <div class="features">read / write</div>
+
+</dd>
+
+        <dt id="m_pitAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_pitAssist.html">m_pitAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_pitReleaseAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_pitReleaseAssist.html">m_pitReleaseAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_pitSpeedLimit" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_pitSpeedLimit.html">m_pitSpeedLimit</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Pit speed limit in kilometres per hour 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_pitStopRejoinPosition" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_pitStopRejoinPosition.html">m_pitStopRejoinPosition</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Predicted position to rejoin at (player) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_pitStopWindowIdealLap" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_pitStopWindowIdealLap.html">m_pitStopWindowIdealLap</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Ideal lap to pit on for current strategy (player) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_pitStopWindowLatestLap" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_pitStopWindowLatestLap.html">m_pitStopWindowLatestLap</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Latest lap to pit on for current strategy (player) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_safetyCarStatus" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_safetyCarStatus.html">m_safetyCarStatus</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = no safety car, 1 = full 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_seasonLinkIdentifier" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_seasonLinkIdentifier.html">m_seasonLinkIdentifier</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Identifier for season - persists across saves 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_sessionDuration" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_sessionDuration.html">m_sessionDuration</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Session duration in seconds 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_sessionLinkIdentifier" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_sessionLinkIdentifier.html">m_sessionLinkIdentifier</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Identifier for session - persists across saves 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_sessionTimeLeft" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_sessionTimeLeft.html">m_sessionTimeLeft</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Time left in session in seconds 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_sessionType" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_sessionType.html">m_sessionType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = unknown, 1 = P1, 2 = P2, 3 = P3, 4 = Short P
+5 = Q1, 6 = Q2, 7 = Q3, 8 = Short Q, 9 = OSQ
+10 = R, 11 = R2, 12 = R3, 13 = Time Trial 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_sliProNativeSupport" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_sliProNativeSupport.html">m_sliProNativeSupport</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  SLI Pro support, 0 = inactive, 1 = active 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_spectatorCarIndex" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_spectatorCarIndex.html">m_spectatorCarIndex</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Index of the car being spectated 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_steeringAssist" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_steeringAssist.html">m_steeringAssist</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_totalLaps" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_totalLaps.html">m_totalLaps</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Total number of laps in this 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_trackId" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_trackId.html">m_trackId</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  -1 for unknown, 0-21 for tracks, see appendix 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_trackLength" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_trackLength.html">m_trackLength</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Track length in metres 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_trackTemperature" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_trackTemperature.html">m_trackTemperature</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Track temp. in degrees Celsius 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_weather" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_weather.html">m_weather</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Weather - 0 = clear, 1 = light cloud, 2 = overcast
+3 = light rain, 4 = heavy rain, 5 = storm 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_weatherForecastSamples" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_weatherForecastSamples.html">m_weatherForecastSamples</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/List-class.html">List</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="../f1_2021_udp/WeatherForecastSample-class.html">WeatherForecastSample</a></span>&gt;</span></span> 
+
+</dt>
+<dd>
+  Array of weather forecast samples 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_weekendLinkIdentifier" class="property">
+  <span class="name"><a href="../f1_2021_udp/PacketSessionData/m_weekendLinkIdentifier.html">m_weekendLinkIdentifier</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Identifier for weekend - persists across saves 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  A string representation of this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">f1_2021_udp</a></li>
+  <li><a href="../f1_2021_udp/f1_2021_udp-library.html">f1_2021_udp</a></li>
+  <li class="self-crumb">PacketSessionData class</li>
+</ol>
+
+
+    <h5>f1_2021_udp library</h5>
+    <ol>
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#classes">Classes</a></li>
+  <li><a href="../f1_2021_udp/Buttons-class.html">Buttons</a></li>
+  <li><a href="../f1_2021_udp/CarDamageData-class.html">CarDamageData</a></li>
+  <li><a href="../f1_2021_udp/CarMotionData-class.html">CarMotionData</a></li>
+  <li><a href="../f1_2021_udp/CarSetupData-class.html">CarSetupData</a></li>
+  <li><a href="../f1_2021_udp/CarStatusData-class.html">CarStatusData</a></li>
+  <li><a href="../f1_2021_udp/CarTelemetryData-class.html">CarTelemetryData</a></li>
+  <li><a href="../f1_2021_udp/DriveThroughPenaltyServed-class.html">DriveThroughPenaltyServed</a></li>
+  <li><a href="../f1_2021_udp/EventDataDetails-class.html">EventDataDetails</a></li>
+  <li><a href="../f1_2021_udp/F12021TelemetryListener-class.html">F12021TelemetryListener</a></li>
+  <li><a href="../f1_2021_udp/FastestLap-class.html">FastestLap</a></li>
+  <li><a href="../f1_2021_udp/FinalClassificationData-class.html">FinalClassificationData</a></li>
+  <li><a href="../f1_2021_udp/Flashback-class.html">Flashback</a></li>
+  <li><a href="../f1_2021_udp/LapData-class.html">LapData</a></li>
+  <li><a href="../f1_2021_udp/LapHistoryData-class.html">LapHistoryData</a></li>
+  <li><a href="../f1_2021_udp/LobbyInfoData-class.html">LobbyInfoData</a></li>
+  <li><a href="../f1_2021_udp/MarshalZone-class.html">MarshalZone</a></li>
+  <li><a href="../f1_2021_udp/PacketCarDamageData-class.html">PacketCarDamageData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarSetupData-class.html">PacketCarSetupData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarStatusData-class.html">PacketCarStatusData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarTelemetryData-class.html">PacketCarTelemetryData</a></li>
+  <li><a href="../f1_2021_udp/PacketEventData-class.html">PacketEventData</a></li>
+  <li><a href="../f1_2021_udp/PacketFinalClassificationData-class.html">PacketFinalClassificationData</a></li>
+  <li><a href="../f1_2021_udp/PacketHeader-class.html">PacketHeader</a></li>
+  <li><a href="../f1_2021_udp/PacketLapData-class.html">PacketLapData</a></li>
+  <li><a href="../f1_2021_udp/PacketLobbyInfoData-class.html">PacketLobbyInfoData</a></li>
+  <li><a href="../f1_2021_udp/PacketMotionData-class.html">PacketMotionData</a></li>
+  <li><a href="../f1_2021_udp/PacketSessionData-class.html">PacketSessionData</a></li>
+  <li><a href="../f1_2021_udp/PacketSessionHistoryData-class.html">PacketSessionHistoryData</a></li>
+  <li><a href="../f1_2021_udp/Penalty-class.html">Penalty</a></li>
+  <li><a href="../f1_2021_udp/RaceWinner-class.html">RaceWinner</a></li>
+  <li><a href="../f1_2021_udp/Retirement-class.html">Retirement</a></li>
+  <li><a href="../f1_2021_udp/SpeedTrap-class.html">SpeedTrap</a></li>
+  <li><a href="../f1_2021_udp/StartLIghts-class.html">StartLIghts</a></li>
+  <li><a href="../f1_2021_udp/StopGoPenaltyServed-class.html">StopGoPenaltyServed</a></li>
+  <li><a href="../f1_2021_udp/TeamMateInPits-class.html">TeamMateInPits</a></li>
+  <li><a href="../f1_2021_udp/TyreStintHistoryData-class.html">TyreStintHistoryData</a></li>
+  <li><a href="../f1_2021_udp/WeatherForecastSample-class.html">WeatherForecastSample</a></li>
+
+
+
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#constants">Constants</a></li>
+  <li><a href="../f1_2021_udp/EVENT_TYPES-constant.html">EVENT_TYPES</a></li>
+
+
+
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#enums">Enums</a></li>
+  <li><a href="../f1_2021_udp/CarWheel.html">CarWheel</a></li>
+  <li><a href="../f1_2021_udp/InfringementTypes.html">InfringementTypes</a></li>
+  <li><a href="../f1_2021_udp/PenaltyTypes.html">PenaltyTypes</a></li>
+  <li><a href="../f1_2021_udp/SurfaceTypes.html">SurfaceTypes</a></li>
+  <li><a href="../f1_2021_udp/Types.html">Types</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../f1_2021_udp/PacketSessionData-class.html#constructors">Constructors</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/PacketSessionData.html">PacketSessionData</a></li>
+
+
+    <li class="section-title">
+      <a href="../f1_2021_udp/PacketSessionData-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_aiDifficulty.html">m_aiDifficulty</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_airTemperature.html">m_airTemperature</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_brakingAssist.html">m_brakingAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_DRSAssist.html">m_DRSAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_dynamicRacingLine.html">m_dynamicRacingLine</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_dynamicRacingLineType.html">m_dynamicRacingLineType</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_ERSAssist.html">m_ERSAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_forecastAccuracy.html">m_forecastAccuracy</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_formula.html">m_formula</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_gamePaused.html">m_gamePaused</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_gearboxAssist.html">m_gearboxAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_header.html">m_header</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_isSpectating.html">m_isSpectating</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_marshalZones.html">m_marshalZones</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_networkGame.html">m_networkGame</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_numMarshalZones.html">m_numMarshalZones</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_numWeatherForecastSamples.html">m_numWeatherForecastSamples</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_pitAssist.html">m_pitAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_pitReleaseAssist.html">m_pitReleaseAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_pitSpeedLimit.html">m_pitSpeedLimit</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_pitStopRejoinPosition.html">m_pitStopRejoinPosition</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_pitStopWindowIdealLap.html">m_pitStopWindowIdealLap</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_pitStopWindowLatestLap.html">m_pitStopWindowLatestLap</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_safetyCarStatus.html">m_safetyCarStatus</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_seasonLinkIdentifier.html">m_seasonLinkIdentifier</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_sessionDuration.html">m_sessionDuration</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_sessionLinkIdentifier.html">m_sessionLinkIdentifier</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_sessionTimeLeft.html">m_sessionTimeLeft</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_sessionType.html">m_sessionType</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_sliProNativeSupport.html">m_sliProNativeSupport</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_spectatorCarIndex.html">m_spectatorCarIndex</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_steeringAssist.html">m_steeringAssist</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_totalLaps.html">m_totalLaps</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_trackId.html">m_trackId</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_trackLength.html">m_trackLength</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_trackTemperature.html">m_trackTemperature</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_weather.html">m_weather</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_weatherForecastSamples.html">m_weatherForecastSamples</a></li>
+    <li><a href="../f1_2021_udp/PacketSessionData/m_weekendLinkIdentifier.html">m_weekendLinkIdentifier</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title inherited"><a href="../f1_2021_udp/PacketSessionData-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../f1_2021_udp/PacketSessionData-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    f1_2021_udp
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

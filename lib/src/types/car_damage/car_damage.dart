@@ -25,15 +25,16 @@ struct CarDamageData
 */
 
 import 'package:f1_2021_udp/src/types/packet_header.dart';
+import 'package:f1_2021_udp/src/types/types.dart';
 
 class CarDamageData {
-  /// Tyre wear (percentage) [RL, RR, LF, RF]
+  /// Tyre wear (percentage) [CarWheel]
   final List<double> m_tyresWear;
 
-  /// Tyre damage (percentage) [RL, RR, LF, RF]
+  /// Tyre damage (percentage) [CarWheel]
   final List<int> m_tyresDamage;
 
-  /// Brakes damage (percentage) [RL, RR, LF, RF]
+  /// Brakes damage (percentage) [CarWheel]
   final List<int> m_brakesDamage;
 
   /// Front left wing damage (percentage)

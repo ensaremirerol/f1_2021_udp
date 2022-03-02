@@ -1,3 +1,7 @@
+/// Package for listening Telemetry data from F1 2021 game.
+///
+/// This package is based on the official F1 2021 game.
+
 library f1_2021_udp;
 
 export 'src/F1_2021_telemery_listener.dart';

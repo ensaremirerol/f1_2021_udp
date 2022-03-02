@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the CarStatusData class from the f1_2021_udp library, for the Dart programming language.">
+  <title>CarStatusData class - f1_2021_udp library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../static-assets/styles.css?v1">
+  <link rel="icon" href="../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../index.html">f1_2021_udp</a></li>
+    <li><a href="../f1_2021_udp/f1_2021_udp-library.html">f1_2021_udp</a></li>
+    <li class="self-crumb">CarStatusData class</li>
+  </ol>
+  <div class="self-name">CarStatusData</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      <div>
+<h1><span class="kind-class">CarStatusData</span> class 
+    <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
+ 
+</h1></div>
+
+    
+
+
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="CarStatusData" class="callable">
+          <span class="name"><a href="../f1_2021_udp/CarStatusData/CarStatusData.html">CarStatusData</a></span><span class="signature">(<span class="parameter" id="-param-m_tractionControl">{<span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_tractionControl</span>, </span><span class="parameter" id="-param-m_antiLockBrakes"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_antiLockBrakes</span>, </span><span class="parameter" id="-param-m_fuelMix"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_fuelMix</span>, </span><span class="parameter" id="-param-m_frontBrakeBias"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_frontBrakeBias</span>, </span><span class="parameter" id="-param-m_pitLimiterStatus"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_pitLimiterStatus</span>, </span><span class="parameter" id="-param-m_fuelInTank"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_fuelInTank</span>, </span><span class="parameter" id="-param-m_fuelCapacity"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_fuelCapacity</span>, </span><span class="parameter" id="-param-m_fuelRemainingLaps"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_fuelRemainingLaps</span>, </span><span class="parameter" id="-param-m_maxRPM"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_maxRPM</span>, </span><span class="parameter" id="-param-m_idleRPM"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_idleRPM</span>, </span><span class="parameter" id="-param-m_maxGears"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_maxGears</span>, </span><span class="parameter" id="-param-m_drsAllowed"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_drsAllowed</span>, </span><span class="parameter" id="-param-m_drsActivationDistance"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_drsActivationDistance</span>, </span><span class="parameter" id="-param-m_actualTyreCompound"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_actualTyreCompound</span>, </span><span class="parameter" id="-param-m_visualTyreCompound"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_visualTyreCompound</span>, </span><span class="parameter" id="-param-m_tyresAgeLaps"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_tyresAgeLaps</span>, </span><span class="parameter" id="-param-m_vehicleFiaFlags"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_vehicleFiaFlags</span>, </span><span class="parameter" id="-param-m_ersStoreEnergy"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_ersStoreEnergy</span>, </span><span class="parameter" id="-param-m_ersDeployMode"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_ersDeployMode</span>, </span><span class="parameter" id="-param-m_ersHarvestedThisLapMGUK"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_ersHarvestedThisLapMGUK</span>, </span><span class="parameter" id="-param-m_ersHarvestedThisLapMGUH"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_ersHarvestedThisLapMGUH</span>, </span><span class="parameter" id="-param-m_ersDeployedThisLap"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> <span class="parameter-name">m_ersDeployedThisLap</span>, </span><span class="parameter" id="-param-m_networkPaused"><span>required</span> <span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> <span class="parameter-name">m_networkPaused</span>}</span>)</span>
+        </dt>
+        <dd>
+           
+          <div class="constructor-modifier features">const</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="hashCode" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd class="inherited">
+  The hash code for this object. <a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">[...]</a>
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+        <dt id="m_actualTyreCompound" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_actualTyreCompound.html">m_actualTyreCompound</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  F1 Modern - 16 = C5, 17 = C4, 18 = C3, 19 = C2, 20 = C1
+7 = inter, 8 = wet
+F1 Classic - 9 = dry, 10 = wet
+F2 – 11 = super soft, 12 = soft, 13 = medium, 14 = hard
+15 = wet 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_antiLockBrakes" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_antiLockBrakes.html">m_antiLockBrakes</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 (off) - 1 (on) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_drsActivationDistance" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_drsActivationDistance.html">m_drsActivationDistance</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = DRS not available, non-zero - DRS will be available 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_drsAllowed" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_drsAllowed.html">m_drsAllowed</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  0 = not allowed, 1 = allowed 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_ersDeployedThisLap" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_ersDeployedThisLap.html">m_ersDeployedThisLap</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  ERS energy deployed this lap 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_ersDeployMode" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_ersDeployMode.html">m_ersDeployMode</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  ERS deployment mode, 0 = none, 1 = medium
+2 = hotlap, 3 = overtake 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_ersHarvestedThisLapMGUH" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_ersHarvestedThisLapMGUH.html">m_ersHarvestedThisLapMGUH</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  ERS energy harvested this lap by MGU-H 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_ersHarvestedThisLapMGUK" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_ersHarvestedThisLapMGUK.html">m_ersHarvestedThisLapMGUK</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  ERS energy harvested this lap by MGU-K 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_ersStoreEnergy" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_ersStoreEnergy.html">m_ersStoreEnergy</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  ERS energy store in Joules 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_frontBrakeBias" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_frontBrakeBias.html">m_frontBrakeBias</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Front brake bias (percentage) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_fuelCapacity" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_fuelCapacity.html">m_fuelCapacity</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Fuel capacity 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_fuelInTank" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_fuelInTank.html">m_fuelInTank</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Current fuel mass 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_fuelMix" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_fuelMix.html">m_fuelMix</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Fuel mix - 0 = lean, 1 = standard, 2 = rich, 3 = max 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_fuelRemainingLaps" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_fuelRemainingLaps.html">m_fuelRemainingLaps</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/double-class.html">double</a></span> 
+
+</dt>
+<dd>
+  Fuel remaining in terms of laps (value on MFD) 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_idleRPM" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_idleRPM.html">m_idleRPM</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Cars idle RPM 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_maxGears" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_maxGears.html">m_maxGears</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Maximum number of gears 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_maxRPM" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_maxRPM.html">m_maxRPM</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Cars max RPM, point of rev limiter 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_networkPaused" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_networkPaused.html">m_networkPaused</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Whether the car is paused in a network game 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_pitLimiterStatus" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_pitLimiterStatus.html">m_pitLimiterStatus</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Pit limiter status - 0 = off, 1 = on 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_tractionControl" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_tractionControl.html">m_tractionControl</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Traction control - 0 = off, 1 = medium, 2 = full 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_tyresAgeLaps" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_tyresAgeLaps.html">m_tyresAgeLaps</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  Age in laps of the current set of tyres 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_vehicleFiaFlags" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_vehicleFiaFlags.html">m_vehicleFiaFlags</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  -1 = invalid/unknown, 0 = none, 1 = green
+2 = blue, 3 = yellow, 4 = red 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="m_visualTyreCompound" class="property">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/m_visualTyreCompound.html">m_visualTyreCompound</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/int-class.html">int</a></span> 
+
+</dt>
+<dd>
+  F1 visual (can be different from actual compound)
+16 = soft, 17 = medium, 18 = hard, 7 = inter, 8 = wet
+F1 Classic – same as above
+F2 ‘19, 15 = wet, 19 – super soft, 20 = soft
+21 = medium , 22 = hard
+Age in laps of the current set of tyres 
+  <div class="features">final</div>
+
+</dd>
+
+        <dt id="runtimeType" class="property inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></span>
+  <span class="signature">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/Type-class.html">Type</a></span> 
+
+</dt>
+<dd class="inherited">
+  A representation of the runtime type of the object. 
+  <div class="features">read-only, inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Invocation-class.html">Invocation</a></span> <span class="parameter-name">invocation</span></span>)
+    <span class="returntype parameter">&#8594; dynamic</span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  Invoked when a non-existent method or property is accessed. <a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+        <dt id="toString" class="callable">
+  <span class="name"><a href="../f1_2021_udp/CarStatusData/toString.html">toString</a></span><span class="signature">(<wbr>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/String-class.html">String</a></span>
+  </span>
+  
+
+</dt>
+<dd>
+  A string representation of this object. <a href="../f1_2021_udp/CarStatusData/toString.html">[...]</a>
+  <div class="features">override</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+  <span class="name"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Object-class.html">Object</a></span> <span class="parameter-name">other</span></span>)
+    <span class="returntype parameter">&#8594; <a href="https://api.flutter.dev/flutter/dart-core/bool-class.html">bool</a></span>
+  </span>
+  
+
+</dt>
+<dd class="inherited">
+  The equality operator. <a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">[...]</a>
+  <div class="features">inherited</div>
+
+</dd>
+
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+  <li><a href="../index.html">f1_2021_udp</a></li>
+  <li><a href="../f1_2021_udp/f1_2021_udp-library.html">f1_2021_udp</a></li>
+  <li class="self-crumb">CarStatusData class</li>
+</ol>
+
+
+    <h5>f1_2021_udp library</h5>
+    <ol>
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#classes">Classes</a></li>
+  <li><a href="../f1_2021_udp/Buttons-class.html">Buttons</a></li>
+  <li><a href="../f1_2021_udp/CarDamageData-class.html">CarDamageData</a></li>
+  <li><a href="../f1_2021_udp/CarMotionData-class.html">CarMotionData</a></li>
+  <li><a href="../f1_2021_udp/CarSetupData-class.html">CarSetupData</a></li>
+  <li><a href="../f1_2021_udp/CarStatusData-class.html">CarStatusData</a></li>
+  <li><a href="../f1_2021_udp/CarTelemetryData-class.html">CarTelemetryData</a></li>
+  <li><a href="../f1_2021_udp/DriveThroughPenaltyServed-class.html">DriveThroughPenaltyServed</a></li>
+  <li><a href="../f1_2021_udp/EventDataDetails-class.html">EventDataDetails</a></li>
+  <li><a href="../f1_2021_udp/F12021TelemetryListener-class.html">F12021TelemetryListener</a></li>
+  <li><a href="../f1_2021_udp/FastestLap-class.html">FastestLap</a></li>
+  <li><a href="../f1_2021_udp/FinalClassificationData-class.html">FinalClassificationData</a></li>
+  <li><a href="../f1_2021_udp/Flashback-class.html">Flashback</a></li>
+  <li><a href="../f1_2021_udp/LapData-class.html">LapData</a></li>
+  <li><a href="../f1_2021_udp/LapHistoryData-class.html">LapHistoryData</a></li>
+  <li><a href="../f1_2021_udp/LobbyInfoData-class.html">LobbyInfoData</a></li>
+  <li><a href="../f1_2021_udp/MarshalZone-class.html">MarshalZone</a></li>
+  <li><a href="../f1_2021_udp/PacketCarDamageData-class.html">PacketCarDamageData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarSetupData-class.html">PacketCarSetupData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarStatusData-class.html">PacketCarStatusData</a></li>
+  <li><a href="../f1_2021_udp/PacketCarTelemetryData-class.html">PacketCarTelemetryData</a></li>
+  <li><a href="../f1_2021_udp/PacketEventData-class.html">PacketEventData</a></li>
+  <li><a href="../f1_2021_udp/PacketFinalClassificationData-class.html">PacketFinalClassificationData</a></li>
+  <li><a href="../f1_2021_udp/PacketHeader-class.html">PacketHeader</a></li>
+  <li><a href="../f1_2021_udp/PacketLapData-class.html">PacketLapData</a></li>
+  <li><a href="../f1_2021_udp/PacketLobbyInfoData-class.html">PacketLobbyInfoData</a></li>
+  <li><a href="../f1_2021_udp/PacketMotionData-class.html">PacketMotionData</a></li>
+  <li><a href="../f1_2021_udp/PacketSessionData-class.html">PacketSessionData</a></li>
+  <li><a href="../f1_2021_udp/PacketSessionHistoryData-class.html">PacketSessionHistoryData</a></li>
+  <li><a href="../f1_2021_udp/Penalty-class.html">Penalty</a></li>
+  <li><a href="../f1_2021_udp/RaceWinner-class.html">RaceWinner</a></li>
+  <li><a href="../f1_2021_udp/Retirement-class.html">Retirement</a></li>
+  <li><a href="../f1_2021_udp/SpeedTrap-class.html">SpeedTrap</a></li>
+  <li><a href="../f1_2021_udp/StartLIghts-class.html">StartLIghts</a></li>
+  <li><a href="../f1_2021_udp/StopGoPenaltyServed-class.html">StopGoPenaltyServed</a></li>
+  <li><a href="../f1_2021_udp/TeamMateInPits-class.html">TeamMateInPits</a></li>
+  <li><a href="../f1_2021_udp/TyreStintHistoryData-class.html">TyreStintHistoryData</a></li>
+  <li><a href="../f1_2021_udp/WeatherForecastSample-class.html">WeatherForecastSample</a></li>
+
+
+
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#constants">Constants</a></li>
+  <li><a href="../f1_2021_udp/EVENT_TYPES-constant.html">EVENT_TYPES</a></li>
+
+
+
+  <li class="section-title"><a href="../f1_2021_udp/f1_2021_udp-library.html#enums">Enums</a></li>
+  <li><a href="../f1_2021_udp/CarWheel.html">CarWheel</a></li>
+  <li><a href="../f1_2021_udp/InfringementTypes.html">InfringementTypes</a></li>
+  <li><a href="../f1_2021_udp/PenaltyTypes.html">PenaltyTypes</a></li>
+  <li><a href="../f1_2021_udp/SurfaceTypes.html">SurfaceTypes</a></li>
+  <li><a href="../f1_2021_udp/Types.html">Types</a></li>
+
+
+</ol>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+    <ol>
+
+    <li class="section-title"><a href="../f1_2021_udp/CarStatusData-class.html#constructors">Constructors</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/CarStatusData.html">CarStatusData</a></li>
+
+
+    <li class="section-title">
+      <a href="../f1_2021_udp/CarStatusData-class.html#instance-properties">Properties</a>
+    </li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_actualTyreCompound.html">m_actualTyreCompound</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_antiLockBrakes.html">m_antiLockBrakes</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_drsActivationDistance.html">m_drsActivationDistance</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_drsAllowed.html">m_drsAllowed</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_ersDeployedThisLap.html">m_ersDeployedThisLap</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_ersDeployMode.html">m_ersDeployMode</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_ersHarvestedThisLapMGUH.html">m_ersHarvestedThisLapMGUH</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_ersHarvestedThisLapMGUK.html">m_ersHarvestedThisLapMGUK</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_ersStoreEnergy.html">m_ersStoreEnergy</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_frontBrakeBias.html">m_frontBrakeBias</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_fuelCapacity.html">m_fuelCapacity</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_fuelInTank.html">m_fuelInTank</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_fuelMix.html">m_fuelMix</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_fuelRemainingLaps.html">m_fuelRemainingLaps</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_idleRPM.html">m_idleRPM</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_maxGears.html">m_maxGears</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_maxRPM.html">m_maxRPM</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_networkPaused.html">m_networkPaused</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_pitLimiterStatus.html">m_pitLimiterStatus</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_tractionControl.html">m_tractionControl</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_tyresAgeLaps.html">m_tyresAgeLaps</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_vehicleFiaFlags.html">m_vehicleFiaFlags</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/m_visualTyreCompound.html">m_visualTyreCompound</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../f1_2021_udp/CarStatusData-class.html#instance-methods">Methods</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="../f1_2021_udp/CarStatusData/toString.html">toString</a></li>
+
+    <li class="section-title inherited"><a href="../f1_2021_udp/CarStatusData-class.html#operators">Operators</a></li>
+    <li class="inherited"><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    f1_2021_udp
+      1.0.0
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../static-assets/highlight.pack.js?v1"></script>
+<script src="../static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+

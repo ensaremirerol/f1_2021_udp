@@ -23,6 +23,7 @@ struct CarTelemetryData
 */
 
 import 'package:f1_2021_udp/src/types/packet_header.dart';
+import 'package:f1_2021_udp/src/types/types.dart';
 
 class CarTelemetryData {
   /// Speed of car in kilometres per hour
@@ -55,23 +56,23 @@ class CarTelemetryData {
   /// Rev lights (bit 0 = leftmost LED, bit 14 = rightmost LED)
   int m_revLightsBitValue;
 
-  /// Brakes temperature (celsius)
+  /// Brakes temperature (celsius) [CarWheel]
   List<int> m_brakesTemperature;
 
-  /// Tyres surface temperature (celsius)
+  /// Tyres surface temperature (celsius) [CarWheel]
   List<int> m_tyresSurfaceTemperature;
 
-  /// Tyres inner temperature (celsius)
+  /// Tyres inner temperature (celsius) [CarWheel]
   List<int> m_tyresInnerTemperature;
 
   /// Engine temperature (celsius)
   int m_engineTemperature;
 
-  /// Tyres pressure (PSI)
+  /// Tyres pressure (PSI) [CarWheel]
   List<double> m_tyresPressure;
 
-  /// Driving surface, see appendices
-  List<int> m_surfaceType;
+  /// Driving surface, see appendices [CarWheel]
+  List<int> m_surfaceType; 
   CarTelemetryData({
     required this.m_speed,
     required this.m_throttle,

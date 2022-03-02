@@ -16,6 +16,13 @@ enum Types {
   unknown
 }
 
+/// RL Rear Left
+/// RR Rear Right
+/// FL Front Left
+/// FR Front Right
+
+enum CarWheel { RL, RR, FL, FR }
+
 /* 
 Penalty types
 0	Drive through

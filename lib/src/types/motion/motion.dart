@@ -136,19 +136,19 @@ class PacketMotionData {
   final PacketHeader m_header;
   final List<CarMotionData> m_carMotionData;
 
-  /// Position of the suspension at the centre of the car in local space
+  /// Position of the suspension at the centre of the car in local space [CarWheel]
   final List<double> m_suspensionPosition;
 
-  /// Velocity of the suspension at the centre of the car in local space
+  /// Velocity of the suspension at the centre of the car in local space [CarWheel]
   final List<double> m_suspensionVelocity;
 
-  /// Acceleration of the suspension at the centre of the car in local space
+  /// Acceleration of the suspension at the centre of the car in local space [CarWheel]
   final List<double> m_suspensionAcceleration;
 
-  /// Speed of each wheel
+  /// Speed of each wheel [CarWheel]
   final List<double> m_wheelSpeed;
 
-  /// Slip ratio for each wheel
+  /// Slip ratio for each wheel [CarWheel]
   final List<double> m_wheelSlip;
 
   /// Velocity in local space(X)
