@@ -32,89 +32,140 @@ class F12021TelemetryListener {
 
   final StreamController<Uint8List> _udpStream = StreamController.broadcast();
 
-  final StreamController<PacketHeader> packetHeaderStream =
+  final StreamController<PacketHeader> _packetHeaderStream =
       StreamController.broadcast();
 
-  final StreamController<PacketMotionData> packetMotionDataStream =
+  final StreamController<PacketMotionData> _packetMotionDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketSessionData> packetSessionDataStream =
+  final StreamController<PacketSessionData> _packetSessionDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketLapData> packetLapDataStream =
+  final StreamController<PacketLapData> _packetLapDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketEventData> packetEventDataStream =
+  final StreamController<PacketEventData> _packetEventDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketParticipantsData> packetParticipantsDataStream =
+  final StreamController<PacketParticipantsData> _packetParticipantsDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketCarSetupData> packetCarSetupDataStream =
+  final StreamController<PacketCarSetupData> _packetCarSetupDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketCarTelemetryData> packetCarTelemetryDataStream =
+  final StreamController<PacketCarTelemetryData> _packetCarTelemetryDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketCarStatusData> packetCarStatusDataStream =
+  final StreamController<PacketCarStatusData> _packetCarStatusDataStream =
       StreamController.broadcast();
 
   final StreamController<PacketFinalClassificationData>
-      packetFinalClassificationDataStream = StreamController.broadcast();
+      _packetFinalClassificationDataStream = StreamController.broadcast();
 
-  final StreamController<PacketLobbyInfoData> packetLobbyInfoDataStream =
+  final StreamController<PacketLobbyInfoData> _packetLobbyInfoDataStream =
       StreamController.broadcast();
 
-  final StreamController<PacketCarDamageData> packetCarDamageDataStream =
+  final StreamController<PacketCarDamageData> _packetCarDamageDataStream =
       StreamController.broadcast();
 
   final StreamController<PacketSessionHistoryData>
-      packetSessionHistoryDataStream = StreamController.broadcast();
+      _packetSessionHistoryDataStream = StreamController.broadcast();
+
+  /// Stream of all UDP packets' headers
+  Stream<PacketHeader> get packetHeaderStream => _packetHeaderStream.stream;
+
+  /// Stream of all UDP packets' motion data
+  Stream<PacketMotionData> get packetMotionDataStream =>
+      _packetMotionDataStream.stream;
+
+  /// Stream of all UDP packets' session data
+  Stream<PacketSessionData> get packetSessionDataStream =>
+      _packetSessionDataStream.stream;
+
+  /// Stream of all UDP packets' lap data
+  Stream<PacketLapData> get packetLapDataStream => _packetLapDataStream.stream;
+
+  /// Stream of all UDP packets' event data
+  Stream<PacketEventData> get packetEventDataStream =>
+      _packetEventDataStream.stream;
+
+  /// Stream of all UDP packets' participants data
+  Stream<PacketParticipantsData> get packetParticipantsDataStream =>
+      _packetParticipantsDataStream.stream;
+
+  /// Stream of all UDP packets' car setup data
+  Stream<PacketCarSetupData> get packetCarSetupDataStream =>
+      _packetCarSetupDataStream.stream;
+
+  /// Stream of all UDP packets' car telemetry data
+  Stream<PacketCarTelemetryData> get packetCarTelemetryDataStream =>
+      _packetCarTelemetryDataStream.stream;
+
+  /// Stream of all UDP packets' car status data
+  Stream<PacketCarStatusData> get packetCarStatusDataStream =>
+      _packetCarStatusDataStream.stream;
+
+  /// Stream of all UDP packets' final classification data
+  Stream<PacketFinalClassificationData>
+      get packetFinalClassificationDataStream =>
+          _packetFinalClassificationDataStream.stream;
+
+  /// Stream of all UDP packets' lobby info data
+  Stream<PacketLobbyInfoData> get packetLobbyInfoDataStream =>
+      _packetLobbyInfoDataStream.stream;
+
+  /// Stream of all UDP packets' car damage data
+  Stream<PacketCarDamageData> get packetCarDamageDataStream =>
+      _packetCarDamageDataStream.stream;
+
+  /// Stream of all UDP packets' session history data
+  Stream<PacketSessionHistoryData> get packetSessionHistoryDataStream =>
+      _packetSessionHistoryDataStream.stream;
 
   F12021TelemetryListener(this.port) {
     _udpStream.stream.listen((event) {
       ParserUtil.getParsedData(event).then((header) {
-        packetHeaderStream.add(header as PacketHeader);
+        _packetHeaderStream.add(header as PacketHeader);
         ParserUtil.getParsedData(event, header).then((fullPacket) {
           switch (Types.values[header.m_packetId]) {
             case Types.motion:
-              packetMotionDataStream.add(fullPacket as PacketMotionData);
+              _packetMotionDataStream.add(fullPacket as PacketMotionData);
               break;
             case Types.session:
-              packetSessionDataStream.add(fullPacket as PacketSessionData);
+              _packetSessionDataStream.add(fullPacket as PacketSessionData);
               break;
             case Types.lap_data:
-              packetLapDataStream.add(fullPacket as PacketLapData);
+              _packetLapDataStream.add(fullPacket as PacketLapData);
               break;
             case Types.event:
-              packetEventDataStream.add(fullPacket as PacketEventData);
+              _packetEventDataStream.add(fullPacket as PacketEventData);
               break;
             case Types.participants:
-              packetParticipantsDataStream
+              _packetParticipantsDataStream
                   .add(fullPacket as PacketParticipantsData);
               break;
             case Types.car_setups:
-              packetCarSetupDataStream.add(fullPacket as PacketCarSetupData);
+              _packetCarSetupDataStream.add(fullPacket as PacketCarSetupData);
               break;
             case Types.car_telemetry:
-              packetCarTelemetryDataStream
+              _packetCarTelemetryDataStream
                   .add(fullPacket as PacketCarTelemetryData);
               break;
             case Types.car_status:
-              packetCarStatusDataStream.add(fullPacket as PacketCarStatusData);
+              _packetCarStatusDataStream.add(fullPacket as PacketCarStatusData);
               break;
             case Types.final_classification:
-              packetFinalClassificationDataStream
+              _packetFinalClassificationDataStream
                   .add(fullPacket as PacketFinalClassificationData);
               break;
             case Types.lobby_info:
-              packetLobbyInfoDataStream.add(fullPacket as PacketLobbyInfoData);
+              _packetLobbyInfoDataStream.add(fullPacket as PacketLobbyInfoData);
               break;
             case Types.car_damage:
-              packetCarDamageDataStream.add(fullPacket as PacketCarDamageData);
+              _packetCarDamageDataStream.add(fullPacket as PacketCarDamageData);
               break;
             case Types.session_history:
-              packetSessionHistoryDataStream
+              _packetSessionHistoryDataStream
                   .add(fullPacket as PacketSessionHistoryData);
               break;
             case Types.unknown:
