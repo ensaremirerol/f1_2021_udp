@@ -25,23 +25,53 @@ struct CarTelemetryData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class CarTelemetryData {
+  /// Speed of car in kilometres per hour
   int m_speed;
-  double m_throttle;
-  double m_steer;
-  double m_brake;
-  int m_clutch;
-  int m_gear;
-  int m_engineRPM;
-  int m_drs;
-  int m_revLightsPercent;
-  int m_revLightsBitValue;
-  List<int> m_brakesTemperature;
-  List<int> m_tyresSurfaceTemperature;
-  List<int> m_tyresInnerTemperature;
-  int m_engineTemperature;
-  List<double> m_tyresPressure;
-  List<int> m_surfaceType;
 
+  /// Amount of throttle applied (0.0 to 1.0)
+  double m_throttle;
+
+  /// Steering (-1.0 (full lock left) to 1.0 (full lock right))
+  double m_steer;
+
+  /// Amount of brake applied (0.0 to 1.0)
+  double m_brake;
+
+  /// Amount of clutch applied (0 to 100)
+  int m_clutch;
+
+  /// Gear selected (1-8, N=0, R=-1)
+  int m_gear;
+
+  /// Engine RPM
+  int m_engineRPM;
+
+  /// 0 = off, 1 = on
+  int m_drs;
+
+  /// Rev lights indicator (percentage)
+  int m_revLightsPercent;
+
+  /// Rev lights (bit 0 = leftmost LED, bit 14 = rightmost LED)
+  int m_revLightsBitValue;
+
+  /// Brakes temperature (celsius)
+  List<int> m_brakesTemperature;
+
+  /// Tyres surface temperature (celsius)
+  List<int> m_tyresSurfaceTemperature;
+
+  /// Tyres inner temperature (celsius)
+  List<int> m_tyresInnerTemperature;
+
+  /// Engine temperature (celsius)
+  int m_engineTemperature;
+
+  /// Tyres pressure (PSI)
+  List<double> m_tyresPressure;
+
+  /// Driving surface, see appendices
+  List<int> m_surfaceType;
   CarTelemetryData({
     required this.m_speed,
     required this.m_throttle,
@@ -85,8 +115,16 @@ struct PacketCarTelemetryData
 class PacketCarTelemetryData {
   final PacketHeader m_header;
   final List<CarTelemetryData> m_carTelemetryData;
+
+  /// Index of MFD panel open - 255 = MFD closed
+  /// Single player, race – 0 = Car setup, 1 = Pits
+  /// 2 = Damage, 3 =  Engine, 4 = Temperatures
+  /// May vary depending on game mode
   final int m_mfdPanelIndex;
   final int m_mfdPanelIndexSecondaryPlayer;
+
+  /// Suggested gear for the player (1-8)
+  /// 0 if no gear suggested
   final int m_suggestedGear;
 
   PacketCarTelemetryData({

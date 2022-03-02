@@ -17,14 +17,31 @@ struct ParticipantData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class ParticipantData {
+  /// Whether the vehicle is AI (1) or Human (0) controlled
   final int m_aiControlled;
+
+  /// Driver id - see appendix, 255 if network human
   final int m_driverId;
+
+  /// Network id – unique identifier for network players
   final int m_networkId;
+
+  /// Team id - see appendix
   final int m_teamId;
+
+  /// My team flag – 1 = My Team, 0 = otherwise
   final int m_myTeam;
+
+  /// Race number of the car
   final int m_raceNumber;
+
+  /// Nationality of the driver
   final int m_nationality;
+
+  /// Name of participant in UTF-8 format
   final String m_name;
+
+  /// The player's UDP setting, 0 = restricted, 1 = public
   final int m_yourTelemetry;
 
   const ParticipantData(

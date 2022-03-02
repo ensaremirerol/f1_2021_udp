@@ -43,28 +43,84 @@ struct CarStatusData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class CarStatusData {
+  /// Traction control - 0 = off, 1 = medium, 2 = full
   final int m_tractionControl;
+
+  /// 0 (off) - 1 (on)
   final int m_antiLockBrakes;
+
+  /// Fuel mix - 0 = lean, 1 = standard, 2 = rich, 3 = max
   final int m_fuelMix;
+
+  /// Front brake bias (percentage)
   final int m_frontBrakeBias;
+
+  /// Pit limiter status - 0 = off, 1 = on
   final int m_pitLimiterStatus;
+
+  /// Current fuel mass
   final double m_fuelInTank;
+
+  /// Fuel capacity
   final double m_fuelCapacity;
+
+  /// Fuel remaining in terms of laps (value on MFD)
   final double m_fuelRemainingLaps;
+
+  /// Cars max RPM, point of rev limiter
   final int m_maxRPM;
+
+  /// Cars idle RPM
   final int m_idleRPM;
+
+  /// Maximum number of gears
   final int m_maxGears;
+
+  /// 0 = not allowed, 1 = allowed
   final int m_drsAllowed;
+
+  /// 0 = DRS not available, non-zero - DRS will be available
   final int m_drsActivationDistance;
+
+  /// F1 Modern - 16 = C5, 17 = C4, 18 = C3, 19 = C2, 20 = C1
+  /// 7 = inter, 8 = wet
+  /// F1 Classic - 9 = dry, 10 = wet
+  /// F2 – 11 = super soft, 12 = soft, 13 = medium, 14 = hard
+  /// 15 = wet
   final int m_actualTyreCompound;
+
+  /// F1 visual (can be different from actual compound)
+  /// 16 = soft, 17 = medium, 18 = hard, 7 = inter, 8 = wet
+  /// F1 Classic – same as above
+  /// F2 ‘19, 15 = wet, 19 – super soft, 20 = soft
+  /// 21 = medium , 22 = hard
+  /// Age in laps of the current set of tyres
   final int m_visualTyreCompound;
+
+  /// Age in laps of the current set of tyres
   final int m_tyresAgeLaps;
+
+  /// -1 = invalid/unknown, 0 = none, 1 = green
+  /// 2 = blue, 3 = yellow, 4 = red
   final int m_vehicleFiaFlags;
+
+  /// ERS energy store in Joules
   final double m_ersStoreEnergy;
+
+  /// ERS deployment mode, 0 = none, 1 = medium
+  /// 2 = hotlap, 3 = overtake
   final int m_ersDeployMode;
+
+  /// ERS energy harvested this lap by MGU-K
   final double m_ersHarvestedThisLapMGUK;
+
+  /// ERS energy harvested this lap by MGU-H
   final double m_ersHarvestedThisLapMGUH;
+
+  /// ERS energy deployed this lap
   final double m_ersDeployedThisLap;
+
+  /// Whether the car is paused in a network game
   final int m_networkPaused;
 
   const CarStatusData({

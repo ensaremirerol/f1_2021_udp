@@ -19,23 +19,20 @@ abstract class Parser<T> {
     if (T != PacketHeader) {
       if (header == null) {
         _logger.e("Header is null");
-        packetHeaderRequired();
+        _packetHeaderRequired();
       }
       _offset = HEADER_OFFSET;
     }
     T result = parse(data, header);
-    reset();
+    _reset();
     return result;
   }
 
+  /// [execute] method should be used! Parses the given [data] into a [T] object.
   @internal
   T parse(Uint8List data, [PacketHeader? header]);
 
-  @internal
-  void reset() {
-    _offset = 0;
-  }
-
+  /// Should not used outside package! Calls [parser] function with current offset.
   @internal
   dynamic parseNext(int length, Function parser) {
     try {
@@ -52,8 +49,11 @@ abstract class Parser<T> {
     }
   }
 
-  @internal
-  Never packetHeaderRequired() {
+  void _reset() {
+    _offset = 0;
+  }
+
+  Never _packetHeaderRequired() {
     throw Exception('Packet header required');
   }
 }

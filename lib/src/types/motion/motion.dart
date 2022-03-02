@@ -25,23 +25,58 @@ struct CarMotionData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class CarMotionData {
+  /// World space X position
   final double m_worldPositionX;
+
+  /// World space Y position
   final double m_worldPositionY;
+
+  /// World space Z position
   final double m_worldPositionZ;
+
+  /// Velocity in world space X
   final double m_worldVelocityX;
+
+  /// Velocity in world space Y
   final double m_worldVelocityY;
+
+  /// Velocity in world space Z
   final double m_worldVelocityZ;
+
+  /// World space forward X direction (normalised)
   final int m_worldForwardDirX;
+
+  /// World space forward Y direction (normalised)
   final int m_worldForwardDirY;
+
+  /// World space forward Z direction (normalised)
   final int m_worldForwardDirZ;
+
+  /// World space right X direction (normalised)
   final int m_worldRightDirX;
+
+  /// World space right Y direction (normalised)
   final int m_worldRightDirY;
+
+  /// World space right Z direction (normalised)
   final int m_worldRightDirZ;
+
+  /// Lateral G-Force component
   final double m_gForceLateral;
+
+  /// Longitudinal G-Force component
   final double m_gForceLongitudinal;
+
+  /// Vertical G-Force component
   final double m_gForceVertical;
+
+  /// Yaw angle in radians
   final double m_yaw;
+
+  /// Pitch angle in radians
   final double m_pitch;
+
+  /// Roll angle in radians
   final double m_roll;
 
   const CarMotionData({
@@ -98,20 +133,50 @@ struct PacketMotionData
 class PacketMotionData {
   final PacketHeader m_header;
   final List<CarMotionData> m_carMotionData;
+
+  /// Position of the suspension at the centre of the car in local space
   final List<double> m_suspensionPosition;
+
+  /// Velocity of the suspension at the centre of the car in local space
   final List<double> m_suspensionVelocity;
+
+  /// Acceleration of the suspension at the centre of the car in local space
   final List<double> m_suspensionAcceleration;
+
+  /// Speed of each wheel
   final List<double> m_wheelSpeed;
+
+  /// Slip ratio for each wheel
   final List<double> m_wheelSlip;
+
+  /// Velocity in local space(X)
   final double m_localVelocityX;
+
+  /// Velocity in local space(Y)
   final double m_localVelocityY;
+
+  /// Velocity in local space(Z)
   final double m_localVelocityZ;
+
+  /// Angular velocity x-component
   final double m_angularVelocityX;
+
+  /// Angular velocity y-component
   final double m_angularVelocityY;
+
+  /// Angular velocity z-component
   final double m_angularVelocityZ;
+
+  /// Angular velocity x-component
   final double m_angularAccelerationX;
+
+  /// Angular velocity y-component
   final double m_angularAccelerationY;
+
+  /// Angular velocity z-component
   final double m_angularAccelerationZ;
+
+  /// Current front wheels angle in radians
   final double m_frontWheelsAngle;
 
   const PacketMotionData({

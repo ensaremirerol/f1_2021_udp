@@ -14,12 +14,23 @@ struct LobbyInfoData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class LobbyInfoData {
+  /// Whether the vehicle is AI (1) or Human (0) controlled
   final int m_aiControlled;
+
+  /// Team id - see appendix (255 if no team currently selected)
   final int m_teamId;
+
+  /// Nationalaty of the driver
   final int m_nationality;
+
+  /// Name of participant in UTF-8 format
   final String m_name;
-  final m_carNumber;
-  final m_readyStatus;
+
+  /// Car number of the player
+  final int m_carNumber;
+
+  /// 0 = not ready, 1 = ready, 2 = spectating
+  final int m_readyStatus;
 
   const LobbyInfoData(
       {required this.m_aiControlled,
@@ -46,6 +57,8 @@ struct PacketLobbyInfoData
 
 class PacketLobbyInfoData {
   final PacketHeader m_header;
+
+  /// Number of players in the lobby data
   final int m_numPlayers;
   final List<LobbyInfoData> m_lobbyPlayers;
 

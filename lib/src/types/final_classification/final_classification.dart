@@ -22,18 +22,44 @@ struct FinalClassificationData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class FinalClassificationData {
+  /// Finishing position
   final int m_position;
+
+  /// Number of laps completed
   final int m_numLaps;
+
+  /// Grid position of the car
   final int m_gridPosition;
+
+  /// Number of points scored
   final int m_points;
+
+  /// Number of pit stops made
   final int m_numPitStops;
+
+  /// Result status - 0 = invalid, 1 = inactive, 2 = active
+  /// 3 = finished, 4 = didnotfinish, 5 = disqualified
+  /// 6 = not classified, 7 = retired
   final int m_resultStatus;
+
+  /// Best lap time of the session in milliseconds
   final int m_bestLapTimeInMS;
+  //// Total race time in seconds without penalties
   final double m_totalRaceTime;
+
+  ///Total penalties accumulated in seconds
   final int m_penaltiesTime;
+
+  /// Number of penalties applied to this driver
   final int m_numPenalties;
+
+  /// Number of tyres stints up to maximum
   final int m_numTyreStints;
+
+  /// Actual tyres used by this driver
   final List<int> m_tyreStintsActual;
+
+  /// Visual tyres used by this driver
   final List<int> m_tyreStintsVisual;
 
   FinalClassificationData(
@@ -68,6 +94,8 @@ struct PacketFinalClassificationData
 
 class PacketFinalClassificationData {
   final PacketHeader m_header;
+
+  /// Number of cars in the final classification
   final int m_numCars;
   final List<FinalClassificationData> m_classificationData;
 

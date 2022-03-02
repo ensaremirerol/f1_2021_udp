@@ -27,23 +27,58 @@ struct CarDamageData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class CarDamageData {
+  /// Tyre wear (percentage) [RL, RR, LF, RF]
   final List<double> m_tyresWear;
+
+  /// Tyre damage (percentage) [RL, RR, LF, RF]
   final List<int> m_tyresDamage;
+
+  /// Brakes damage (percentage) [RL, RR, LF, RF]
   final List<int> m_brakesDamage;
+
+  /// Front left wing damage (percentage)
   final int m_frontLeftWingDamage;
+
+  /// Front right wing damage (percentage)
   final int m_frontRightWingDamage;
+
+  /// Rear wing damage (percentage)
   final int m_rearWingDamage;
+
+  /// Floor damage (percentage)
   final int m_floorDamage;
+
+  /// Diffuser damage (percentage)
   final int m_diffuserDamage;
+
+  /// Sidepod damage (percentage)
   final int m_sidepodDamage;
+
+  /// Indicator for DRS fault, 0 = OK, 1 = fault
   final int m_drsFault;
+
+  /// Gear box damage (percentage)
   final int m_gearBoxDamage;
+
+  /// Engine damage (percentage)
   final int m_engineDamage;
+
+  /// Engine wear MGU-H (percentage)
   final int m_engineMGUHWear;
+
+  /// Engine wear ES (percentage)
   final int m_engineESWear;
+
+  /// Engine wear CE (percentage)
   final int m_engineCEWear;
+
+  /// Engine wear ICE (percentage)
   final int m_engineICEWear;
+
+  /// Engine wear MGU-K (percentage)
   final int m_engineMGUKWear;
+
+  /// Engine wear TC (percentage)
   final int m_engineTCWear;
 
   const CarDamageData({

@@ -31,27 +31,70 @@ struct CarSetupData
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class CarSetupData {
+  /// Front wing aero
   final int m_frontWing;
+
+  /// Rear wing aero
   final int m_rearWing;
+
+  /// Differential adjustment on throttle (percentage)
   final int m_onThrottle;
+
+  /// Differential adjustment off throttle (percentage)
   final int m_offThrottle;
+
+  /// Front camber angle (suspension geometry)
   final double m_frontCamber;
+
+  /// Rear camber angle (suspension geometry)
   final double m_rearCamber;
+
+  /// Front toe angle (suspension geometry)
   final double m_frontToe;
+
+  /// Rear toe angle (suspension geometry)
   final double m_rearToe;
+
+  /// Front suspension
   final int m_frontSuspension;
+
+  /// Rear suspension
   final int m_rearSuspension;
+
+  /// Front anti-roll bar
   final int m_frontAntiRollBar;
+
+  /// Rear anti-roll bar
   final int m_rearAntiRollBar;
+
+  /// Front ride height
   final int m_frontSuspensionHeight;
+
+  /// Rear ride height
   final int m_rearSuspensionHeight;
+
+  /// Brake pressure (percentage)
   final int m_brakePressure;
+
+  /// Brake bias (percentage)
   final int m_brakeBias;
+
+  /// Rear left tyre pressure (PSI)
   final double m_rearLeftTyrePressure;
+
+  /// Rear right tyre pressure (PSI)
   final double m_rearRightTyrePressure;
+
+  /// Front left tyre pressure (PSI)
   final double m_frontLeftTyrePressure;
+
+  /// Front right tyre pressure (PSI)
   final double m_frontRightTyrePressure;
+
+  /// Ballast
   final int m_ballast;
+
+  /// Fuel load
   final double m_fuelLoad;
 
   const CarSetupData({

@@ -11,10 +11,20 @@
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class LapHistoryData {
+  /// Lap time in milliseconds
   final int m_lapTimeInMS;
+
+  /// Sector 1 time in milliseconds
   final int m_sector1TimeInMS;
+
+  /// Sector 2 time in milliseconds
   final int m_sector2TimeInMS;
+
+  /// Sector 3 time in milliseconds
   final int m_sector3TimeInMS;
+
+  /// 0x01 bit set-lap valid,      0x02 bit set-sector 1 valid,
+  /// 0x04 bit set-sector 2 valid, 0x08 bit set-sector 3 valid
   final int m_lapValidBitFlags;
 
   const LapHistoryData({
@@ -34,8 +44,13 @@ class LapHistoryData {
 };*/
 
 class TyreStintHistoryData {
+  /// Lap the tyre usage ends on (255 of current tyre)
   final int m_endLap;
+
+  /// Actual tyres used by this driver
   final int m_tyreActualCompound;
+
+  /// Visual tyres used by this driver
   final int m_tyreVisualCompound;
 
   const TyreStintHistoryData({
@@ -63,14 +78,32 @@ struct PacketSessionHistoryData
 
 class PacketSessionHistoryData {
   final PacketHeader m_header;
+
+  /// Index of the car this lap data relates to
   final int m_carIdx;
+
+  /// Num laps in the data (including current partial lap)
   final int m_numLaps;
+
+  /// Number of tyre stints in the data
   final int m_numTyreStints;
+
+  /// Lap the best lap time was achieved on
   final int m_bestLapTimeLapNum;
+
+  /// Lap the best Sector 1 time was achieved on
   final int m_bestSector1LapNum;
+
+  /// Lap the best Sector 2 time was achieved on
   final int m_bestSector2LapNum;
+
+  /// Lap the best Sector 3 time was achieved on
   final int m_bestSector3LapNum;
+
+  /// 100 laps of data max
   final List<LapHistoryData> m_lapHistoryData;
+
+  /// 8 tyre stints of data max
   final List<TyreStintHistoryData> m_tyreStintsHistoryData;
 
   const PacketSessionHistoryData({

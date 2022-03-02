@@ -67,7 +67,9 @@ union EventDataDetails
 import 'package:f1_2021_udp/src/types/packet_header.dart';
 
 class FastestLap {
+  /// Vehicle index of car achieving fastest lap
   final int vehicleIdx;
+  /// Lap time is in seconds
   final double lapTime;
 
   const FastestLap({
@@ -77,6 +79,7 @@ class FastestLap {
 }
 
 class Retirement {
+  /// Vehicle index of car retiring
   final int vehicleIdx;
 
   const Retirement({
@@ -85,6 +88,7 @@ class Retirement {
 }
 
 class TeamMateInPits {
+  /// Vehicle index of team mate
   final int vehicleIdx;
 
   const TeamMateInPits({
@@ -93,6 +97,7 @@ class TeamMateInPits {
 }
 
 class RaceWinner {
+  /// Vehicle index of the race winner
   final int vehicleIdx;
 
   const RaceWinner({
@@ -101,12 +106,18 @@ class RaceWinner {
 }
 
 class Penalty {
+  /// Penalty type
   final int penaltyType;
   final int infringementType;
+  /// Vehicle index of the car the penalty is applied to
   final int vehicleIdx;
+  /// Vehicle index of the other car involved
   final int otherVehicleIdx;
+  /// Time gained, or time spent doing action in seconds
   final int time;
+  /// // Lap the penalty occurred on
   final int lapNum;
+  /// Number of places gained by this
   final int placesGained;
 
   const Penalty({
@@ -121,9 +132,13 @@ class Penalty {
 }
 
 class SpeedTrap {
+  /// Vehicle index of the vehicle triggering speed trap
   final int vehicleIdx;
+  /// Top speed achieved in kilometres per hour
   final double speed;
+  /// Overall fastest speed in session = 1, otherwise 0
   final int overallFastestInSession;
+  /// Fastest speed for driver in session = 1, otherwise 0
   final int driverFastestInSession;
 
   const SpeedTrap({
@@ -135,6 +150,7 @@ class SpeedTrap {
 }
 
 class StartLIghts {
+  /// Number of lights showing
   final int numLights;
 
   const StartLIghts({
@@ -143,6 +159,7 @@ class StartLIghts {
 }
 
 class DriveThroughPenaltyServed {
+  /// Vehicle index of the vehicle serving drive through
   final int vehicleIdx;
 
   const DriveThroughPenaltyServed({
@@ -151,6 +168,7 @@ class DriveThroughPenaltyServed {
 }
 
 class StopGoPenaltyServed {
+  /// Vehicle index of the vehicle serving stop go
   final int vehicleIdx;
 
   const StopGoPenaltyServed({
@@ -159,7 +177,9 @@ class StopGoPenaltyServed {
 }
 
 class Flashback {
+  /// Frame identifier flashed back to
   final int flashbackFrameIdentifier;
+  /// Session time flashed back to
   final double flashbackSessionTime;
 
   const Flashback({
@@ -169,6 +189,7 @@ class Flashback {
 }
 
 class Buttons {
+  /// Bit flags specifying which buttons are being pressed
   final int buttonStatus;
 
   const Buttons({
@@ -221,6 +242,7 @@ struct PacketEventData
 
 class PacketEventData {
   final PacketHeader m_header;
+  // Event string code  
   final String m_eventStringCode;
   final EventDataDetails m_eventDetails;
 

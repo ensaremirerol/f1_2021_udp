@@ -39,7 +39,6 @@ class PacketHeaderParser extends Parser<PacketHeader> {
         m_frameIdentifier: parseNext(4, bd.getUint32),
         m_playerCarIndex: parseNext(1, bd.getUint8),
         m_secondaryPlayerCarIndex: parseNext(1, bd.getUint8));
-    reset();
     return m_header;
   }
 }
