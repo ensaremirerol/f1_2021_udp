@@ -28,6 +28,8 @@ abstract class Parser<T> {
     return result;
   }
 
+  Type get type => T;
+
   /// [execute] method should be used! Parses the given [data] into a [T] object.
   @internal
   T parse(Uint8List data, [PacketHeader? header]);

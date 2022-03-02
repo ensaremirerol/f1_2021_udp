@@ -44,14 +44,14 @@ class SessionHistoryParser extends Parser<PacketSessionHistoryData> {
     final PacketSessionHistoryData packet = PacketSessionHistoryData(
         m_header: header!,
         m_carIdx: parseNext(1, bd.getUint8),
-        m_numLaps: parseNext(1, bd.getUint8),
-        m_numTyreStints: parseNext(1, bd.getUint8),
+        m_numLaps: 0,
+        m_numTyreStints: 0,
         m_bestLapTimeLapNum: parseNext(1, bd.getUint8),
         m_bestSector1LapNum: parseNext(1, bd.getUint8),
         m_bestSector2LapNum: parseNext(1, bd.getUint8),
         m_bestSector3LapNum: parseNext(1, bd.getUint8),
         m_lapHistoryData: List.generate(
-          100,
+          parseNext(1, bd.getUint8),
           (index) => LapHistoryData(
               m_lapTimeInMS: parseNext(4, bd.getUint32),
               m_sector1TimeInMS: parseNext(2, bd.getUint16),
@@ -60,11 +60,13 @@ class SessionHistoryParser extends Parser<PacketSessionHistoryData> {
               m_lapValidBitFlags: parseNext(1, bd.getUint8)),
         ),
         m_tyreStintsHistoryData: List.generate(
-            8,
+            parseNext(1, bd.getUint8),
             (index) => TyreStintHistoryData(
                 m_endLap: parseNext(1, bd.getUint8),
                 m_tyreActualCompound: parseNext(1, bd.getUint8),
                 m_tyreVisualCompound: parseNext(1, bd.getUint8))));
+    packet.m_numLaps = packet.m_lapHistoryData.length;
+    packet.m_numTyreStints = packet.m_tyreStintsHistoryData.length;
     return packet;
   }
 }

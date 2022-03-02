@@ -100,16 +100,16 @@ class SessionParser extends Parser<PacketSessionData> {
         m_isSpectating: parseNext(1, bd.getUint8),
         m_spectatorCarIndex: parseNext(1, bd.getUint8),
         m_sliProNativeSupport: parseNext(1, bd.getUint8),
-        m_numMarshalZones: parseNext(1, bd.getUint8),
+        m_numMarshalZones: 0,
         m_marshalZones: List.generate(
-            21,
+            parseNext(1, bd.getUint8),
             (index) => MarshalZone(
                 parseNext(4, bd.getFloat32), parseNext(1, bd.getInt8))),
         m_safetyCarStatus: parseNext(1, bd.getUint8),
         m_networkGame: parseNext(1, bd.getUint8),
-        m_numWeatherForecastSamples: parseNext(1, bd.getUint8),
+        m_numWeatherForecastSamples: 0,
         m_weatherForecastSamples: List.generate(
-            56,
+            parseNext(1, bd.getUint8),
             (index) => WeatherForecastSample(
                   m_sessionType: parseNext(1, bd.getUint8),
                   m_timeOffset: parseNext(2, bd.getUint16),
@@ -137,6 +137,8 @@ class SessionParser extends Parser<PacketSessionData> {
         m_DRSAssist: parseNext(1, bd.getUint8),
         m_dynamicRacingLine: parseNext(1, bd.getUint8),
         m_dynamicRacingLineType: parseNext(1, bd.getUint8));
+    packet.m_numMarshalZones = packet.m_marshalZones.length;
+    packet.m_numWeatherForecastSamples = packet.m_weatherForecastSamples.length;
     return packet;
   }
 }

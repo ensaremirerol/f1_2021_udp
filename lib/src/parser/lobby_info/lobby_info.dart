@@ -42,7 +42,7 @@ class LobbyInfoParser extends Parser<PacketLobbyInfoData> {
                 m_teamId: parseNext(1, bd.getUint8),
                 m_nationality: parseNext(1, bd.getUint8),
                 m_name:
-                    List<int>.generate(48, (index) => parseNext(1, bd.getInt8))
+                    List<int>.generate(48, (index) => parseNext(1, bd.getUint8))
                         .charArrayToString(),
                 m_carNumber: parseNext(1, bd.getUint8),
                 m_readyStatus: parseNext(1, bd.getUint8))));

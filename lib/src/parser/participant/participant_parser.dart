@@ -49,7 +49,7 @@ class ParticipantParser extends Parser<PacketParticipantsData> {
                 m_raceNumber: parseNext(1, bd.getUint8),
                 m_nationality: parseNext(1, bd.getUint8),
                 m_name:
-                    List<int>.generate(48, (index) => parseNext(1, bd.getInt8))
+                    List<int>.generate(48, (index) => parseNext(1, bd.getUint8))
                         .charArrayToString(),
                 m_yourTelemetry: parseNext(1, bd.getUint8))));
     return packet;

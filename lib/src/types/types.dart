@@ -168,26 +168,6 @@ enum InfringementTypes {
 }
 
 /*
-Session Started	“SSTA”	Sent when the session starts
-Session Ended	“SEND”	Sent when the session ends
-Fastest Lap	“FTLP”	When a driver achieves the fastest lap
-Retirement	“RTMT”	When a driver retires
-DRS enabled	“DRSE”	Race control have enabled DRS
-DRS disabled	“DRSD”	Race control have disabled DRS
-Team mate in pits	“TMPT”	Your team mate has entered the pits
-Chequered flag	“CHQF”	The chequered flag has been waved
-Race Winner	“RCWN”	The race winner is announced
-Penalty Issued	“PENA”	A penalty has been issued – details in event
-Speed Trap Triggered	“SPTP”	Speed trap has been triggered by fastest speed
-Start lights	“STLG”	Start lights – number shown
-Lights out	“LGOT”	Lights out
-Drive through served	“DTSV”	Drive through penalty served
-Stop go served	“SGSV”	Stop go penalty served
-Flashback	“FLBK”	Flashback activated
-Button status	“BUTN”	Button status changed
-*/
-
-/*
 Surface types
 These types are from physics data and show what type of contact each wheel is experiencing.
 
@@ -221,22 +201,41 @@ enum SurfaceTypes {
   ridged,
 }
 
-const Map<String, int> EVENT_TYPES = {
-  "SSTA": 0,
-  "SEND": 1,
-  "FTLP": 2,
-  "RTMT": 3,
-  "DRSE": 4,
-  "DRSD": 5,
-  "TMPT": 6,
-  "CHQF": 7,
-  "RCWN": 8,
-  "PENA": 9,
-  "SPTP": 10,
-  "STLG": 11,
-  "LGOT": 12,
-  "DTSV": 13,
-  "SGSV": 14,
-  "FLBK": 15,
-  "BUTN": 16,
+/*
+Session Started	“SSTA”	Sent when the session starts
+Session Ended	“SEND”	Sent when the session ends
+Fastest Lap	“FTLP”	When a driver achieves the fastest lap
+Retirement	“RTMT”	When a driver retires
+DRS enabled	“DRSE”	Race control have enabled DRS
+DRS disabled	“DRSD”	Race control have disabled DRS
+Team mate in pits	“TMPT”	Your team mate has entered the pits
+Chequered flag	“CHQF”	The chequered flag has been waved
+Race Winner	“RCWN”	The race winner is announced
+Penalty Issued	“PENA”	A penalty has been issued – details in event
+Speed Trap Triggered	“SPTP”	Speed trap has been triggered by fastest speed
+Start lights	“STLG”	Start lights – number shown
+Lights out	“LGOT”	Lights out
+Drive through served	“DTSV”	Drive through penalty served
+Stop go served	“SGSV”	Stop go penalty served
+Flashback	“FLBK”	Flashback activated
+Button status	“BUTN”	Button status changed
+*/
+const Map<String, String> EVENT_TYPES = {
+  "SSTA": "Session Started",
+  "SEND": "Session Ended",
+  "FTLP": "Fastest Lap",
+  "RTMT": "Retirement",
+  "DRSE": "DRS enabled",
+  "DRSD": "DRS disabled",
+  "TMPT": "Team mate in pits",
+  "CHQF": "Chequered flag",
+  "RCWN": "Race Winner",
+  "PENA": "Penalty",
+  "SPTP": "Speed Trap Triggered",
+  "STLG": "Star lights",
+  "LGOT": "Lights out",
+  "DTSV": "Drive through served",
+  "SGSV": "Stop go served",
+  "FLBK": "Flashback",
+  "BUTN": "Button",
 };

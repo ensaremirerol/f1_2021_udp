@@ -178,7 +178,7 @@ class PacketSessionData {
   final int m_sliProNativeSupport;
 
   /// Number of marshal zones to follow
-  final int m_numMarshalZones;
+  int m_numMarshalZones;
 
   /// List of marshal zones – max 21
   final List<MarshalZone> m_marshalZones;
@@ -190,7 +190,7 @@ class PacketSessionData {
   final int m_networkGame;
 
   /// Number of weather samples to follow
-  final int m_numWeatherForecastSamples;
+  int m_numWeatherForecastSamples;
 
   /// Array of weather forecast samples
   final List<WeatherForecastSample> m_weatherForecastSamples;
@@ -246,7 +246,7 @@ class PacketSessionData {
   /// 0 = off, 1 = corners only, 2 = full
   final int m_dynamicRacingLineType;
 
-  const PacketSessionData({
+  PacketSessionData({
     required this.m_header,
     required this.m_weather,
     required this.m_trackTemperature,

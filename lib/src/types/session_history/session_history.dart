@@ -83,10 +83,10 @@ class PacketSessionHistoryData {
   final int m_carIdx;
 
   /// Num laps in the data (including current partial lap)
-  final int m_numLaps;
+  int m_numLaps;
 
   /// Number of tyre stints in the data
-  final int m_numTyreStints;
+  int m_numTyreStints;
 
   /// Lap the best lap time was achieved on
   final int m_bestLapTimeLapNum;
@@ -106,7 +106,7 @@ class PacketSessionHistoryData {
   /// 8 tyre stints of data max
   final List<TyreStintHistoryData> m_tyreStintsHistoryData;
 
-  const PacketSessionHistoryData({
+  PacketSessionHistoryData({
     required this.m_header,
     required this.m_carIdx,
     required this.m_numLaps,
